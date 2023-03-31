@@ -1,0 +1,107 @@
+{% include 'header.html' %}
+</aside>
+<!-- end: sidebar -->
+<section role="main" class="content-body">
+    <header class="page-header">
+        <h2>Dashboard</h2>
+    
+        <div class="right-wrapper pull-right">
+            <ol class="breadcrumbs">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li><span>Dashboard</span></li>
+            </ol>
+    
+            <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+        </div>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </header>
+    
+    {% include 'footer.html' %}
+    <!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+           </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" predator="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" predator="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" predator="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- pagi title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='frontend/assets/images/backgrounds/pagi-title.jpg')}}">
+  <div class="container">
+   <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="text-blue" data-animation-out="fadeOutRight" data-delay-out="3" data-duration-in="3" data-animation-in="fadeInLeft" data-delay-in="3">Grafik</h1>
+            <h5 class="text-blue mb-4" data-animation-out="fadeOutRight" data-delay-out="3" data-duration-in="3" data-animation-in="fadeInLeft" data-delay-in="3">grafik: We offer good, quality USA Home Predictions between several House units and we will maintain it in our final project.</h5>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /pagi title -->
+
+<!-- REVIISISIISIS -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>House Chart</h1>
+        <img src="{{ url_for('static',filename='frontend/assets/images/grafik/grafik-1.jpg')}}" alt="" class="img-fluid" />
+        <h5>
+          Based on the House Age chart, the oldest home (max) sold in the United States is 9.5 years while the newest home sold (min) is 2.6 years
+        </h5>
+      </div>
+
+      
+      <!-- GAMBARR  2 -->
+        
+        <div class="col-md-12">
+        <h1>Price Chart</h1>
+        <img src="{{ url_for('static',filename='frontend/assets/images/grafik/grafik-2.jpg')}}" alt="" class="img-fluid"/>
+        <h5>
+          Based on the Price chart, the highest house price sold in the United States was US$ 2469066, while the lowest house price sold was US$ 15938.66.
+        </h5>
+      </div>
+
+
+      <!-- GAMBARRR 3-->
+      <div class="col-md-12">
+        <h1>Grid Graphic</h1>
+        <img src="{{ url_for('static',filename='frontend/assets/images/grafik/grafik-3.jpg')}}" alt="" class="img-fluid" />
+        <h5>
+          The grid graph shows the correlation between variables on each axis. The correlation ranges from -1 to 1. A value close to zero means that there is no linear trend between the two variables. The closer the value is to 1, the more positive and stronger the correlation is. Based on the Heatmap plot, the Price and House Age variables have a correlation value of 0.45, meaning that the two variables have a positive and quite strong correlation
+        </h5>
+      </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- END OF REVISISISISI -->

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>USA</title>
+
+  <!-- website responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- * Plugins Needed for the Project * -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/bootstrap/bootstrap.min.css') }}">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/slick/slick.css') }}">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/themify-icons/themify-icons.css') }}">
+  <!-- animation css -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/animate/animate.css') }}">
+  <!-- aos -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/aos/aos.css') }}">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='frontend/assets/plugins/venobox/venobox.css') }}">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--rumah-->
+  <link rel="shortcut icon" href="images/rumah.png" type="image/x-icon">
+  <link rel="icon" href="images/rumah.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- predator start -->
+  <div class="preloader">
+    <img src="images/predator.gif" alt="predator">
+  </div>
+  <!-- predator end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-2" href=>Hub</strong> +638 838 9467 3128</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        
+  <!-- navbar -->
+  <div class="navigation w-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+         <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="about.html">about</a>
+                <a class="dropdown-item" href="index.html">index</a>
+                <a class="dropdown-item" href="contact.html">contact</a>
+                <a class="dropdown-item" href="grafik.html">grafik</a>
+                <a class="dropdown-item" href="pemilik.html">pemilik</a>
+                <a class="dropdown-item" href="pemiliksingle.html">pemilik Single</a>
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+
+
+<!-- pagi title -->
+<section class="page-title-section overlay" data-background="{{ url_for('static',filename='frontend/assets/images/backgrounds/pagi-title.jpg')}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@pagi-link">pemilik</a></li>
+          <li class="list-inline-item text-blue h2 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">We offer good, quality USA Home Predictions between several House units and we will maintain it in our final project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /pagi title -->
+
+<!-- pemilik -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- pemilik category list -->
+        <ul class="list-inline text-center filter-controls mb-5">
+          <li class="list-inline-item m-3 text-uppercase active" data-filter="all">All</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="arts">arts</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="pre-science">prediction science</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="business-study">business studies</li>
+          <li class="list-inline-item m-3 text-uppercase" data-filter="law">law</li>
+        </ul>
+      </div>
+    </div>
+    <!-- pemilik list -->
+    <div class="row filtr-container">
+
+     <!-- pemilik -->
+      <div data-category="All, business studies" class="col-lg-3 col-sm-3 mb-3 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ url_for('static',filename='frontend/assets/images/pemilik/pemilik-1.jpg')}}" alt="pemilik">
+          <div class="card-body">
+            <a href="pemiliksingle">
+              <h4 class="card-title">Dikri Nur Abdillah</h4>
+            </a>
+            <p>pemilik</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- pemilik -->
+      <div data-category="prediction science" class="col-lg-3 col-sm-3 mb-4 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ url_for('static',filename='frontend/assets/images/pemilik/pemilik-2.jpg')}}" alt="pemilik">
+          <div class="card-body">
+            <a href="pemiliksingle">
+              <h4 class="card-title">Ade Irvan</h4>
+            </a>
+            <p>pemilik</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- pemilik -->
+      <div data-category="law" class="col-lg-3 col-sm-3 mb-4 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ url_for('static',filename='frontend/assets/images/pemilik/pemilik-3.jpg')}}" alt="pemilik">
+          <div class="card-body">
+            <a href="pemiliksingle">
+              <h4 class="card-title">kharir makhfudz</h4>
+            </a>
+            <p>pemilik</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- pemilik -->
+      <div data-category="prediction science, arts" class="col-lg-3 col-sm-3 mb-4 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ url_for('static',filename='frontend/assets/images/pemilik/pemilik-4.jpg')}}" alt="pemilik">
+          <div class="card-body">
+            <a href="pemiliksingle">
+              <h4 class="card-title">Happyta Nilam Sari</h4>
+            </a>
+            <p>pemilik</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- pemilik -->
+      <div data-category="All" class="col-lg-3 col-sm-3 mb-4 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ url_for('static',filename='frontend/assets/images/pemilik/pemilik-5.jpg')}}" alt="pemilik">
+          <div class="card-body">
+            <a href="pemiliksingle">
+              <h4 class="card-title">trisari Gandania Zalukhu</h4>
+            </a>
+            <p>pemilik</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="home.html"><img class="img-fluid mb-2" src="{{ url_for('static',filename='frontend/assets/images/rumah.png')}}" alt="rumah"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">California, 48035, Los Angeles , USA</li>
+            <li class="mb-2">+1 (2) 213 323</li>
+            <li class="mb-2">+1 (2) 213 323</li>
+            <li class="mb-2">last@lacity.org/li>
+          </ul>
+        </div>
+       <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">About</a></li>
+            <li class="mb-3"><a class="text-color" href="pemilik.html">Pemilik</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SUPPORT</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">RECOMMEND</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- foolter -->
+  <div class="prediksi Harga Rumah USA-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">prediksi rumah
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © Dikri NA</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/jQuery/jquery.min.js') }}"></script>
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/bootstrap/bootstrap.min.js') }}"></script>
+<!-- slick slider -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/slick/slick.min.js') }}"></script>
+<!-- aos -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/aos/aos.js') }}"></script>
+<!-- venobox popup -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/venobox/venobox.min.js') }}"></script>
+<!-- filter -->
+<script src="{{ url_for('static',filename='frontend/assets/plugins/filterizr/jquery.filterizr.min.js') }}"></script>
+
+<!-- Main Script -->
+<script src="{{ url_for('static',filename='frontend/assets/js/script.js') }}"></script>
+</body>
+</html>
